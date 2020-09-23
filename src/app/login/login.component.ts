@@ -1,20 +1,17 @@
-import { Component } from '@angular/core';
-//import { Login } from '.login/login.component';
-//import { Login } from './login.component';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'login',
+  selector: 'Login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent{ //implements OnInit {
+export class LoginComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
   
   enviarForm(form){
     console.log(form);
   }
-  //constructor() { }
-
-  //ngOnInit() {
-  //}
 
 }
