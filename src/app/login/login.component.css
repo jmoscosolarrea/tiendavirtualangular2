@@ -1,5 +1,10 @@
-body{
-    background-image: url("/src/assets/images/login-fondo.jpg");
+.cuerpo-inicio {
+  background-image: url("/assets/images/login-fondo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: 10px;
 }
 input.ng-touched.ng-invalid{
     border: 1px solid red;

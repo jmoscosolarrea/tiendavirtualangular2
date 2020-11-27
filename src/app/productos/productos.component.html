@@ -1,3 +1,19 @@
-<div class="container">
-  <p>Estoy en productos</p>
-</div>
+<body class="cuerpo-inicio">
+    <app-barra-superior></app-barra-superior>
+    <div class="container">
+      <div class="row">
+        <h1>Catálogo de productos</h1>
+        <h3>¿Qué está buscando?</h3>
+      </div>
+      <div class="buscar mb-4">
+        <input class="form-control" type="text" placeholder="Buscar producto" aria-label="Search">
+      </div>
+    </div>
+    <div class="row cuerpo" id="mostrarDatos">
+      <ul>
+        <li *ngFor="let prod of productos1">
+          <p>{{prod.descripcion}}</p>
+        </li>       
+      </ul>
+    </div>
+</body>

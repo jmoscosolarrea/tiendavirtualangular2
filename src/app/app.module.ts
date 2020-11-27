@@ -6,14 +6,16 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ProductosComponent } from './productos/productos.component';
+import { BarraSuperiorComponent } from './barra-superior/barra-superior.component';
 import { HttpService} from './http.service';
-import {DataService} from './data.service';
+import { DataService} from './data.service';
 
 import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    BarraSuperiorComponent,
     ProductosComponent
   ],
   imports: [

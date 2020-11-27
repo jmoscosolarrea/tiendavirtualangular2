@@ -4,6 +4,8 @@ import { HttpService } from '../http.service';
 import { Response } from '@angular/http';
 import { Router } from '@angular/router';
 import { ProductosComponent } from '../productos/productos.component';
+import { BarraSuperiorComponent } from  '../barra-superior/barra-superior.component';
+
 
 @Component({
   selector: 'Login',
@@ -32,7 +34,8 @@ export class LoginComponent {
         if (usuario == email && clave == clave1){
           alert("Usuario encontrado");
           bandera = true;
-          this.router.navigate(['productos']);
+          this.router.navigate(['barra-superior']);
+         // this.router.navigate(['productos']);
         }
       }
       if (bandera == false){
